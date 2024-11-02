@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "My Whatsapp Privacy",
+    "version": "1.0",
+    "description": "My chrome extension to not show text to other",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "css": [
+                "style.css"
+            ],
+            "js": [
+                "script.js"
+            ],
+            "matches": [
+                "https://web.whatsapp.com/"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ]
+}

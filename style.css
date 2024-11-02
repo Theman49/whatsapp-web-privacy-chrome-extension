@@ -1,0 +1,8 @@
+.privacy-active,
+.chat-privacy-active {
+	filter: blur(5px);
+}
+.privacy-active:hover,
+.chat-privacy-active:hover {
+	filter: blur(0px);
+}
