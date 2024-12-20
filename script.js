@@ -17,3 +17,11 @@ document.getElementById("deactivate").addEventListener("click", async () => {
 });
 
 
+document.getElementById("myTheme").addEventListener("click", async () => {
+  const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+  console.log('tab', tab)
+  chrome.scripting.executeScript({
+	target: {tabId: tab.id},
+	files: ["scripts/my_theme.js"]
+  })
+});

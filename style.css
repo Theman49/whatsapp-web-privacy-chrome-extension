@@ -6,3 +6,9 @@
 .chat-privacy-active:hover {
 	filter: blur(0px);
 }
+.my-theme {
+	right: 0;
+	top: 30%;
+	height: 60vh;
+	transform: translateY(-50%);
+}
